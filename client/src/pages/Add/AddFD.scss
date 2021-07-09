@@ -1,0 +1,105 @@
+.form-container{
+   margin: 2rem 10rem;
+   padding:2rem;
+   background-color: white;
+   border: 1px solid #eee;
+
+   .error{
+       color:red;
+       margin:0.5rem 0;
+   }
+   
+
+   .form{
+       display: flex;
+       flex-direction:column;
+       margin-top:1rem;
+       justify-content: space-between;
+       background-color: white;
+
+       .input-group{
+           display:flex;
+           flex-direction:row;
+           width:100%;
+           justify-content:space-between;
+           margin-bottom:1rem;
+
+           .input-period{
+               display:flex;
+               flex-direction:row;
+               
+               #period{
+                   width:10vw;
+               }
+
+               select{
+                   width:20vw;
+               }
+           }
+       }
+
+       div{
+           display: flex;
+           flex-direction: column;
+          
+
+           label{
+               margin-bottom: 0.2rem;
+           }
+
+           input,select{
+               padding: 0.8rem;
+               outline:none;
+               border:none;
+               background-color: #eee;
+               width:30vw;
+               font-size:1rem;
+           }
+
+           button{
+              margin-top:1rem;
+              width: 10vw;
+              height: 5vh;
+              cursor: pointer;
+              outline: none;
+              border:none;
+              background-color: black;
+              color:white;
+              font-size:1rem;
+           }
+       }
+   }
+}
+
+.goto-home{
+    margin: 2rem 10rem;
+    display: flex;
+
+    .link-container{
+        display: flex;
+        align-items: center;
+        padding:1rem;
+      
+
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color:black;
+            font-weight: 600;
+            font-size: 1.2rem;
+
+            .arrow-back{
+                transition: all 0.2s ease;
+            }
+
+            &:hover .arrow-back{
+                transform: translateX(-10px);
+            }
+            
+            .arrow-back{
+                margin-right: 0.3rem;
+            }
+        }
+    }
+}

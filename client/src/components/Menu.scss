@@ -1,0 +1,44 @@
+.menu{
+
+
+    ul{
+        border-left:1px solid #eee;
+        list-style: none;
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: 40vw;
+        padding:5rem;
+        gap:3rem;
+        right:-650px;
+        background-color: rgba(255, 255, 255, 1);
+        animation: slidein 0.5s forwards ;
+
+        li{
+            display: flex;
+            align-items: center;
+            gap:1rem;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+            font-size: 3rem;
+        }
+    }
+}
+
+@keyframes slidein{
+    from{
+        right:-650px
+    }
+    to{
+        right:0px
+    }
+}
+
+
+
+
+
+
